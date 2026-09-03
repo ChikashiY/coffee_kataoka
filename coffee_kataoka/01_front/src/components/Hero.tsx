@@ -54,22 +54,22 @@ function Hero() {
             }`}
         >
           <p className="text-xs tracking-[0.3em] text-paper/80">ABOUT OUR COFFEE &amp; SHOP</p>
-          <h2 className="mt-4 font-mincho text-2xl sm:text-3xl">豆と向き合う、静かな時間。</h2>
-          <p className="mx-auto mt-6 max-w-xl text-sm leading-loose text-paper/90 sm:text-base">
+          {/* <h2 className="mt-4 font-mincho text-2xl sm:text-3xl">豆と向き合う、静かな時間。</h2> */}
+          <p className="mx-auto mt-6 max-w-5xl text-sm leading-loose text-paper/90 sm:text-base">
             COFFEE KATAOKA は、新潟県新潟市黒埼にある
-            農機具小屋を改装した自家焙煎のコーヒー屋です。
+            農機具小屋を改装した自家焙煎のコーヒー屋です。<br />
             この町は、お米や枝豆をはじめ、農業がとても身近にある地域。
-            日々の風景の中に、生産者の姿が自然とあります。
+            日々の風景の中に、生産者の姿が自然とあります。<br />
 
             そんな土地に立っていると、コーヒーにとって大切な
-            「根っこ（ルーツ）」を思わずにはいられません。
+            「根っこ（ルーツ）」を思わずにはいられません。<br />
             誰が、どんな環境で育ててくれた豆なのか。
             そして歴史の中で、コーヒーがどんなふうに
-            人々の暮らしに寄り添ってきたのか。
+            人々の暮らしに寄り添ってきたのか。<br />
 
             COFFEE KATAOKA は、その“巡り”の一員として、
             ここ黒埼で焙煎した一杯を、
-            みなさんの生活にそっと届けたいと思っています。
+            みなさんの生活にそっと届けたいと思っています。<br />
             その一杯が、あなたの温かい時間につながったら嬉しいです。
           </p>
         </div>
