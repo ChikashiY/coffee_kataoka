@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom'
 import type { Product } from '../data/products'
 
 function ProductCard({ product }: { product: Product }) {
   return (
-    <div className="group">
-      <div className="relative aspect-square overflow-hidden bg-stone">
+    <Link to={`/onlineshop/${product.id}`} className="group block">
+      <div className="relative aspect-square overflow-hidden bg-stone shadow-sm transition-shadow duration-500 group-hover:shadow-lg">
         <img
           src={product.image}
           alt={product.name}
@@ -17,7 +18,7 @@ function ProductCard({ product }: { product: Product }) {
       </div>
       <p className="mt-4 text-sm">{product.name}</p>
       <p className="mt-1 text-sm text-ink-soft">¥{product.price.toLocaleString('ja-JP')}（税込）</p>
-    </div>
+    </Link>
   )
 }
 

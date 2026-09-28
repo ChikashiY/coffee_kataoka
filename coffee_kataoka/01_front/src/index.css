@@ -12,10 +12,49 @@
 }
 
 @layer base {
-  html {
-    @apply scroll-smooth;
-  }
   body {
     @apply bg-paper text-ink font-sans antialiased;
   }
+}
+
+@keyframes scroll-bar-trail {
+  0% {
+    top: 0;
+    bottom: 100%;
+    animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  }
+
+  8% {
+    top: 0;
+    bottom: 100%;
+  }
+
+  40% {
+    top: 0;
+    bottom: 0;
+    animation-timing-function: linear;
+  }
+
+  55% {
+    top: 0;
+    bottom: 0;
+    animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0);
+  }
+
+  85% {
+    top: 100%;
+    bottom: 0;
+  }
+
+  100% {
+    top: 100%;
+    bottom: 0;
+  }
+}
+
+.animate-scroll-bar {
+  position: absolute;
+  left: 0;
+  right: 0;
+  animation: scroll-bar-trail 2.6s infinite;
 }
